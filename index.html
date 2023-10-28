@@ -40,11 +40,16 @@
                         <label for="student-age">Age</label>
                         <input type="number" name="age" id="student-age" placeholder="Student age" class="form-control">
                     </div>
-                    <div clas="mb-3">
+                    <div class="row">
+                        <div class="col-6">
                         <button type="submit" value="Submit" class="form-control btn btn-primary">
                             <span class="spinner-border spinner-border-sm htmx-indicator" id="loading-indicator"></span>
                             Submit
                         </button>
+                        </div>
+                        <div class="col">
+                        <button type="button" class="btn btn-danger" hx-get="/" hx-target="body" hx-swap="outerhtml">Reset student list</button>
+                    </div>
                     </div>
                 </form>
             </div>
